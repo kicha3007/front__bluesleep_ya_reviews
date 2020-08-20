@@ -1,0 +1,25 @@
+extend include/template_base
+
+block variables
+	-
+		var title = 'Лэндинг';
+
+	include include/blocks/pillows-advantages
+	include include/blocks/advantages-detail
+	include include/blocks/sleep-box
+	include include/blocks/horizon
+	include include/blocks/complement-advantages
+	include include/blocks/complement-advantages_2
+	include include/blocks/space-box
+	include include/blocks/space-advantages
+	include include/blocks/sleep-box
+	include include/blocks/topper
+	include include/blocks/reviews-ya
+
+block content
+	//+topper(class="topper_indent_bottom")
+	//+complement-advantages()
+	//+advantages-detail()
+	+reviews-ya()
+
+

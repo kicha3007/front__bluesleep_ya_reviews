@@ -1,0 +1,26 @@
+.reviews-stars {
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    margin: 0 -3px;
+    align-items: flex-start;
+    margin-right: 10px;
+
+  }
+  &__item {
+    margin: 0 3px;
+
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #C4C4C4;
+
+  }
+
+
+}

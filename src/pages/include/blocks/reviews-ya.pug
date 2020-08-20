@@ -1,0 +1,65 @@
+include reviews-stars
+
+mixin reviews-ya(data)
+	section.reviews-ya.reviews-ya_indent-bottom.reviews-ya_indent-top&attributes(attributes)
+		.reviews-ya__container.container
+				.reviews-ya__main-title
+					| Отзывы
+					br
+					| о подушках Blue Sleep
+				.reviews-ya__wrap(data-reviews-ya-wrap)
+					.reviews-ya__item
+						.reviews-ya__column.reviews-ya__column_pos_1
+							.reviews-ya__inner-wrap
+								.reviews-ya__avatar-box
+									img.reviews-ya__avatar-img(src="", alt='')
+									.reviews-ya__icon-sc.reviews-ya__icon-sc_icon_fb
+										img.reviews-ya__icon-sc-img(src="assets/img/reviews_ya/r-icon-fb.svg", alt='')
+								.reviews-ya__name Иван Иванов
+								.reviews-ya__img-box
+									img(src="assets/img/reviews_ya/r-pillow_1.png", alt='').reviews-ya__img
+									.reviews-ya__img-desc Анатомическая подушка Blue Sleep
+						.reviews-ya__column.reviews-ya__column_pos_2
+							.reviews-ya__content
+								+reviews-stars()
+								.reviews-ya__desc-wrap(data-reviews-ya-desc-wrap)
+									.reviews-ya__desc(data-reviews-ya-desc)
+										| Подшипник подвижного объекта косвенно даёт более простую систему дифференциальных уравнений, если исключить период, что явно видно поодшипник подвижного объекта подвижного объекта косвенно даёт lorem ipsum и тд
+									.reviews-ya__btn-show-all.hide(data-btn-show-all="Скрыть") Читать далее
+					.reviews-ya__item
+						.reviews-ya__column.reviews-ya__column_pos_1
+							.reviews-ya__inner-wrap
+								.reviews-ya__avatar-box
+									img.reviews-ya__avatar-img(src="assets/img/reviews_ya/ava_1.png", alt='')
+									.reviews-ya__icon-sc.reviews-ya__icon-sc_icon_google
+										img.reviews-ya__icon-sc-img(src="assets/img/reviews_ya/r-icon-google.svg", alt='')
+								.reviews-ya__name Апполинария  Пирожкова
+								.reviews-ya__img-box
+									img(src="assets/img/reviews_ya/r-pillow_2.png", alt='').reviews-ya__img
+									.reviews-ya__img-desc Подушка в подушке Blue Sleep
+						.reviews-ya__column.reviews-ya__column_pos_2
+							.reviews-ya__content
+								+reviews-stars()
+								.reviews-ya__desc-wrap(data-reviews-ya-desc-wrap)
+									.reviews-ya__desc(data-reviews-ya-desc)
+										| Все классно, но ставлю 4, потому что я женщина
+									.reviews-ya__btn-show-all.hide(data-btn-show-all) Читать далее
+					.reviews-ya__item
+						.reviews-ya__column.reviews-ya__column_pos_1
+							.reviews-ya__inner-wrap
+								.reviews-ya__avatar-box
+									img.reviews-ya__avatar-img(src="assets/img/reviews_ya/ava_2.png", alt='')
+									.reviews-ya__icon-sc.reviews-ya__icon-sc_icon_ya
+										img.reviews-ya__icon-sc-img(src="assets/img/reviews_ya/r-icon-ya.svg", alt='')
+								.reviews-ya__name
+									| Хунь Сянь Цзы
+								.reviews-ya__img-box
+									img(src="assets/img/reviews_ya/r-pillow_1.png", alt='').reviews-ya__img
+									.reviews-ya__img-desc Подушка в подушке Blue Sleep
+						.reviews-ya__column.reviews-ya__column_pos_2
+							.reviews-ya__content
+								+reviews-stars()
+								.reviews-ya__desc-wrap(data-reviews-ya-desc-wrap)
+									.reviews-ya__desc(data-reviews-ya-desc)
+										| Подшипник подвижного объекта косвенно даёт более простую систему дифференциальных уравнений, если исключить период, что явно видно поодшипник подвижного объекта подвижного объекта косвенно даёт dfsd
+									.reviews-ya__btn-show-all.hide(data-btn-show-all) Читать далее

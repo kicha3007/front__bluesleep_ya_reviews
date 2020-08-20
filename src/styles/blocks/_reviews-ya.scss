@@ -1,0 +1,255 @@
+.reviews-ya {
+  &_indent-bottom {
+    margin-bottom: 45px;
+  }
+
+  &_indent-top {
+    margin-top: 47px;
+  }
+
+  &__wrap {
+    display: flex !important;
+  
+
+  }
+
+  .slick-track {
+    display: flex !important;
+  }
+
+  &__item {
+    max-width: 570px;
+    display: flex !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #eae5e2;
+    height: 100%;
+
+    margin: 0 15px;
+    @include phones {
+      margin: 0;
+      flex-wrap: wrap;
+     
+    }
+  }
+
+  .slick-list {
+    transform: none !important;
+  }
+
+  &__column {
+    @include phones {
+        width: 100%;
+   
+    }
+
+    &_pos_1 {
+      padding: 30px 40px 40px 30px;
+      background: #f9f9f9;
+      max-width: 190px;
+      flex-basis: 190px;
+      width: 100%;
+      flex-grow: 1000000;
+      flex-shrink: 0;
+      border-radius: 10px 0px 0px 10px;
+      @include phones {
+          max-width: none;
+      }
+
+    }
+
+    &_pos_2 {
+      padding: 30px 30px;
+      border-radius:  0px 10px 10px 0;
+    }
+  }
+
+  &__inner-wrap {
+    @include phones {
+        display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__avatar-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    //overflow: hidden;
+    background: url("../img/reviews_ya/reviews-no-photo.svg") no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__avatar-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__icon-sc {
+    position: absolute;
+    bottom: 0px;
+    right: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+    background: #ffffff;
+
+    &_icon_google {
+    }
+
+    &_icon_ya {
+    }
+
+    &_icon_fb {
+      background: #4e6297;
+    }
+  }
+
+  &__icon-sc-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 24px;
+    color: #1f2633;
+    margin-bottom: 40px;
+    min-height: 48px;
+    @include phones {
+        width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img-box {
+    max-width: 120px;
+    position: relative;
+    transition: .1s ;
+    &:hover {
+      filter: drop-shadow(4px 5px 7px #CCCCCC);
+      .reviews-ya__img-desc {
+        display: block;
+      }
+
+    }
+  }
+  &__img-desc {
+    position: absolute;
+    left: 105%;
+    top: -25px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px #EAE5E2;
+    border-radius: 7px;
+    padding: 3px 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    min-width: 270px;
+    display: none;
+    @include phones {
+      left: 0%;
+      min-width: 150px;
+      top: -58px;
+    }
+
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1f2633;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__btn-show-all {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #005eff;
+    cursor: pointer;
+    &.hide {
+      display: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
+
+  &__desc-wrap {
+    min-height: 190px;
+  }
+
+  .slick {
+    &-arrow {
+      position: absolute;
+      left: -10px;
+      font-size: 0;
+      width: 50px;
+      height: 50px;
+      border: none;
+      outline: none;
+      padding: 0;
+      cursor: pointer;
+      z-index: 200;
+      top: 42%;
+      background: #ffffff url("../img/reviews_ya/arrow-r-ya.svg") no-repeat center;
+      background-size: 20%;
+      border-radius: 50%;
+      box-shadow: 0px 2px 10px #eae5e2;
+    }
+
+    &-disabled {
+      opacity: 0.4;
+      cursor: auto;
+    }
+
+    &-next {
+      left: auto;
+      right: -10px;
+      transform: rotate(0);
+    }
+
+    &-prev {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__main-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #005eff;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
