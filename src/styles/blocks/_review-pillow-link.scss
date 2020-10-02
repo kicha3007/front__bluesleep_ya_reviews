@@ -1,0 +1,103 @@
+.review-pillow-link {
+  margin-bottom: 45px;
+  @include phones {
+    margin-bottom: 55px;
+  }
+  &__list {
+    display: flex;
+    margin-bottom: -20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include phones {
+      
+        
+    }
+
+  }
+  &__item {
+    padding: 5px 14px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin: 0 10px 20px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    @include phones {
+        width: 100%;
+      margin-bottom: 8px;
+      height: 40px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+
+
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &_pos_1 {
+      max-width: 112px;
+      @include phones {
+        max-width: 90px;
+      }
+
+    }
+
+    &_pos_2 {
+      max-width: 177px;
+      @include phones {
+        max-width: 135px;
+      }
+
+    }
+
+    &_pos_3 {
+      max-width: 125px;
+      @include phones {
+        max-width: 100px;
+      }
+    }
+
+    &_pos_4 {
+      max-width: 135px;
+      @include phones {
+        max-width: 108px;
+      }
+    }
+
+    &_pos_5 {
+      max-width: 123px;
+      @include phones {
+        max-width: 99px;
+      }
+    }
+
+    &_pos_6 {
+      max-width: 121px;
+      @include phones {
+        max-width: 97px;
+      }
+    }
+
+    &_pos_7 {
+      max-width: 117px;
+      @include phones {
+        max-width: 94px;
+      }
+    }
+
+  }
+  &__note {
+    font-weight: 300;
+    font-size: 16px;
+
+    text-align: center;
+    color: #1F2633;
+    line-height: 1.6;
+  }
+
+}

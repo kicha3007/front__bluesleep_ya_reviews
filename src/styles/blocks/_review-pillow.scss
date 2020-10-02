@@ -1,0 +1,134 @@
+.review-pillow {
+  background: #F2F3F1;
+  position: relative;
+  padding: 50px 0 60px;
+  margin-top: 30px;
+  @include phones {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 389px;
+    background: url("../img/review-pillow/bg_blue_top.jpg") no-repeat center;
+    background-size: cover;
+    @include phones {
+
+      background-position: calc(100% - -273px) center;
+      height: 376px;
+    }
+
+  }
+  &_bg_pink:before {
+
+    background-image: url("../img/review-pillow/bg_pink_top.jpg");
+  }
+  &__wrap {
+    position: relative;
+    z-index: 3;
+
+  }
+  &__container.container {
+    max-width: 750px;
+
+  }
+  &__img-box {
+    max-width: 598px;
+    @include phones {
+      max-width: 282px;
+      padding-top: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+  }
+  &__title {
+    position: absolute;
+    left: 195px;
+    top: 85px;
+    width: 600px;
+
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.5;
+
+    color: #FFFFFF;
+    @include laptop {
+      max-width: 100%;
+      width: auto;
+    }
+    @include phones {
+      top: 60px;
+      width: 320px;
+      text-align: center;
+      font-size: 22px;
+      left: -20px;
+    }
+
+
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+
+
+    color: #1F2633;
+    text-align: center;
+    margin-top: -30px;
+    position: relative;
+    @include phones {
+      font-size: 14px;
+      margin-top: -20px;
+      max-width: 310px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+
+    }
+
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -215px;
+      width: 99px;
+      height: 92px;
+      background: url("../img/review-pillow/decor_blue.png") no-repeat center;
+      background-size: cover;
+
+      z-index: 5;
+      @include desktop {
+        left: -180px;
+      }
+    }
+    &_bg_pink:before {
+
+      background-image: url("../img/review-pillow/decor_pink.png");
+    }
+
+  }
+  &__note {
+
+  }
+
+
+
+
+
+}
